@@ -39,7 +39,6 @@ body{
         </style>
 
   <body>
-
 <div class="hero">
 <h1>👑 Happy Birthday Bindu 👑</h1>
 <p>A  Birthday Surprise For a beautiful Girl 🦋
@@ -94,8 +93,15 @@ Happy Birthday Bindu Once Again!!!!!!
 <p>— @aNiL_KoHlI_7</p>
 </div>
 </div>
+        <button onclick="toggleMusic()" class="btn">
+🎵 Play / Pause Music
+        </button>
   
- <script>
+   <script>
+function showSurprise(){
+document.getElementById("surprise").classList.remove("hidden");
+}
+    <script>
 let musicPlaying = false;
 
 function toggleMusic() {
@@ -135,6 +141,7 @@ for(let k=0;k<14;k++) {
  b.style.animationDuration=(8+Math.random()*8)+'s';
  document.body.appendChild(b);
 }
+   </script>
 </script>
 </body>
    <audio id="bgMusic" loop>
