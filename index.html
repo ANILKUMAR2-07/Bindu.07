@@ -43,9 +43,9 @@ body{
 <h1>👑 Happy Birthday Bindu 👑</h1>
 <p>A  Birthday Surprise For a beautiful Girl 🦋
   From Anil</p>
-<button class="btn" onclick="OpenGift()">🎁 Open Your Gift </button>
+  <button class="btn" onclick="openGift()">🎁 Open Your Gift</button>
 </div>
-
+  
 <div id="main" class="hidden">
 <div class="slider">
 <img class="slide" src="photo.4.jpg">
@@ -93,18 +93,18 @@ Happy Birthday Bindu Once Again!!!!!!
 <p>— @aNiL_KoHlI_7</p>
 </div>
 </div>
-  
-<script>
-  functions OpenGift(){
+   <script>
+    
+function openGift(){
  document.getElementById('main').classList.remove('hidden');
 }
-   
-functions wish(){
+
+function wish(){
  document.getElementById('sp').style.display='block';
 }
 
 let i=0;
-functions show(){
+function show(){
  let s=document.getElementsByClassName('slide');
  for(let j=0;j<s.length;j++) s[j].style.display='none';
  i++;
@@ -121,10 +121,8 @@ for(let k=0;k<14;k++) {
  b.style.left=Math.random()*100+'%';
  b.style.animationDuration=(8+Math.random()*8)+'s';
  document.body.appendChild(b);
-}
-   </script>
+} 
+</script>   
+
 </body>
-   <audio id="bgMusic" loop>
-  <source src="bgm1.mp3" type="audio/mpeg">
-   </audio>
   </html> 
