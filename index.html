@@ -43,7 +43,7 @@ body{
 <h1>👑 Happy Birthday Bindu 👑</h1>
 <p>A  Birthday Surprise For a beautiful Girl 🦋
   From Anil</p>
-<button class="btn" onclick="openGift()">🎁 Open Your Gift</button>
+<button class="btn" onclick="OpenGift()">🎁 Open Your Gift </button>
 </div>
 
 <div id="main" class="hidden">
@@ -94,17 +94,17 @@ Happy Birthday Bindu Once Again!!!!!!
 </div>
 </div>
   
-   <script>
-function showSurprise(){
-document.getElementById("surprise").classList.remove("hidden");
+<script>
+  functions OpenGift(){
+ document.getElementById('main').classList.remove('hidden');
 }
    
-function wish(){
+functions wish(){
  document.getElementById('sp').style.display='block';
 }
 
 let i=0;
-function show(){
+functions show(){
  let s=document.getElementsByClassName('slide');
  for(let j=0;j<s.length;j++) s[j].style.display='none';
  i++;
