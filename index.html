@@ -22,6 +22,21 @@ h1{font-size:3rem;color:#ffd700}
 .sparkle{font-size:28px;display:none}
 .final{text-align:center;padding:50px 20px}
   </style>
+  <style>
+    .music-btn{
+position:fixed;
+top:20px;
+right:20px;
+background:#FFD700;
+color:black;
+border:none;
+padding:12px 20px;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+z-index:999;
+    }
+    </style>
 </head>
  
   <style>
@@ -75,7 +90,9 @@ musicPlaying = true;
   <img class="slide" src="photo3.jpg">
   <img class="slide" src="photo.2.jpg">
  </div>
-  
+  <button class="music-btn" onclick="toggleMusic()">
+🎵 Music
+  </button>
 <div class="card">
 <h2>💌 Dear Bindu</h2>
 <p>
