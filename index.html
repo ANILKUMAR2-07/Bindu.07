@@ -54,6 +54,9 @@ body{
   <img class="slide" src="photo3.jpg">
   <img class="slide" src="photo.2.jpg">
  </div>
+  <button onclick="toggleMusic()" class="btn">
+🎵 Play / Pause Music
+  </button>
   
 <div class="card">
 <h2>💌 Dear Bindu</h2>
@@ -95,8 +98,20 @@ Happy Birthday Bindu Once Again!!!!!!
 </div>
 </div>
  <script>
-function openGift(){
- document.getElementById('main').classList.remove('hidden');
+let musicPlaying = false;
+
+function toggleMusic() {
+
+  const music = document.getElementById("bgMusic");
+
+  if (musicPlaying) {
+    music.pause();
+    musicPlaying = false;
+  } else {
+    music.play();
+    musicPlaying = true;
+  }
+
 }
 
 function wish(){
@@ -124,4 +139,7 @@ for(let k=0;k<14;k++) {
 }
 </script>
 </body>
+   <audio id="bgMusic" loop>
+  <source src="bgm1.mp3" type="audio/mpeg">
+   </audio>
   </html> 
