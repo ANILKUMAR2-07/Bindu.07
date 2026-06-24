@@ -97,7 +97,16 @@ Happy Birthday Bindu Once Again!!!!!!
     
 function openGift(){
  document.getElementById('main').classList.remove('hidden');
-}
+
+     const music = document.getElementById('bgMusic');
+music.play();
+
+window.scrollTo({
+top:window.innerHeight,
+behavior:'smooth'
+});
+
+     }
 
 function wish(){
  document.getElementById('sp').style.display='block';
@@ -125,4 +134,7 @@ for(let k=0;k<14;k++) {
 </script>   
 
 </body>
+  <audio id="bgMusic" loop>
+    <source src="bgm1.mp3" type="audio/mpeg">
+  </audio>
   </html> 
