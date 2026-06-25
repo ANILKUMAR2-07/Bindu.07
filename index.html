@@ -54,31 +54,25 @@ body{
 }
         </style>
        
-<script>
+ <script>
 
-let musicPlaying false;
+let musicPlaying = false;
 
 function toggleMusic(){
 
-const music document.getElementById("bgMusic");
+const music = document.getElementById("bgMusic");
 
 if(musicPlaying){
-
 music.pause();
-
 musicPlaying = false;
-
 }
-
 else{
-
 music.play();
-
 musicPlaying = true;
+}
 
 }
 
-     }
  </script>
 
   <body>
@@ -138,24 +132,20 @@ Happy Birthday Bindu Once Again!!!!!!
 <p>— @aNiL_KoHlI_7</p>
 </div>
 </div>
-   
-<script>
-
+   <script>
+    
 function openGift(){
+ document.getElementById('main').classList.remove('hidden');
 
-document.getElementById('content').classList.remove('hidden');
-  
-const music document.getElementById('bgMusic');
-
+     const music = document.getElementById('bgMusic');
 music.play();
- window.scrollTo({
 
+window.scrollTo({
 top:window.innerHeight,
-
-behavior: 'smooth'
-
+behavior:'smooth'
 });
-  }
+
+     }
 
 function wish(){
  document.getElementById('sp').style.display='block';
@@ -183,7 +173,7 @@ for(let k=0;k<14;k++) {
 </script>   
 
 </body>
-    <audio id="bgMusic" autoplay control>
+  <audio id="bgMusic" loop>
     <source src="BGM.mp3" type="audio/mpeg">
-    </audio>
+  </audio>
   </html> 
