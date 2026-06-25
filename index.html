@@ -72,6 +72,32 @@ musicPlaying = true;
 }
 
 }
+   <script>
+
+const songs = [
+    "bmg1.mp3",
+    "BGM.mp3",
+    "MSD7.mp3"
+];
+
+let currentSong = 0;
+
+const player = document.getElementById("bgMusic");
+
+player.addEventListener("ended", function(){
+
+    currentSong++;
+
+    if(currentSong >= songs.length){
+        currentSong = 0;
+    }
+
+    player.src = songs[currentSong];
+    player.play();
+
+});
+
+</script>
 
  </script>
 
@@ -132,20 +158,45 @@ Happy Birthday Bindu Once Again!!!!!!
 <p>— @aNiL_KoHlI_7</p>
 </div>
 </div>
-   <script>
-    
-function openGift(){
- document.getElementById('main').classList.remove('hidden');
+   
+<script>
 
-     const music = document.getElementById('bgMusic');
-music.play();
+function openGift(){
+
+document.getElementById('content').classList.remove('hidden');
+
+player.play();
 
 window.scrollTo({
 top:window.innerHeight,
 behavior:'smooth'
 });
 
-     }
+}
+
+const songs = [
+"bmg1.mp3",
+"MSD7.mp3",
+"BGM.mp3"
+];
+
+let currentSong = 0;
+
+const player = document.getElementById("bgMusic");
+
+player.addEventListener("ended", function(){
+
+currentSong++;
+
+if(currentSong >= songs.length){
+currentSong = 0;
+}
+
+player.src = songs[currentSong];
+player.p
+  lay();
+
+});
 
 function wish(){
  document.getElementById('sp').style.display='block';
