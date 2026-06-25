@@ -54,31 +54,31 @@ body{
 }
         </style>
        
-   <script>
+<script>
 
-const songs = [
-    "bmg1.mp3",
-    "BGM.mp3",
-    "MSD07.mp3"
-];
+let musicPlaying false;
 
-let currentSong = 0;
+function toggleMusic(){
 
-const player = document.getElementById("bgMusic");
+const music document.getElementById("bgMusic");
 
-player.addEventListener("ended", function(){
+if(musicPlaying){
 
-    currentSong++;
+music.pause();
 
-    if(currentSong >= songs.length){
-        currentSong = 0;
-    }
+musicPlaying = false;
 
-    player.src = songs[currentSong];
-    player.play();
+}
 
-});
+else{
 
+music.play();
+
+musicPlaying = true;
+
+}
+
+     }
  </script>
 
   <body>
@@ -144,39 +144,18 @@ Happy Birthday Bindu Once Again!!!!!!
 function openGift(){
 
 document.getElementById('content').classList.remove('hidden');
+  
+const music document.getElementById('bgMusic');
 
-player.play();
+music.play();
+ window.scrollTo({
 
-window.scrollTo({
 top:window.innerHeight,
-behavior:'smooth'
-});
 
-}
-
-const songs = [
-"bmg1.mp3",
-"BGM.mp3",
-"MSD07.mp3"
-];
-
-let currentSong = 0;
-
-const player = document.getElementById("bgMusic");
-
-player.addEventListener("ended", function(){
-
-currentSong++;
-
-if(currentSong >= songs.length){
-currentSong = 0;
-}
-
-player.src = songs[currentSong];
-player.p
-  lay();
+behavior: 'smooth'
 
 });
+  }
 
 function wish(){
  document.getElementById('sp').style.display='block';
